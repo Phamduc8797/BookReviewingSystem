@@ -1,0 +1,20 @@
+<div class="mainmenu-area navbar-fixed-top navbar-header-custom affix"
+  data-spy="affix" data-offset-top="10" id="menu0">
+  <nav class="navbar reponsive-menu">
+    <div class="container">
+      <div class = "navbar-header">
+        <div class = "navbar-left in fade" id="menu1">
+          <%= link_to t(".title"), root_path, id: "logo" %>
+        </div>
+      </div>
+      <div id = "mainmenu" class = "navbar-right in fade">
+        <ul class="nav navbar-nav" id="menu2">
+          <li><%= link_to t(".home"), root_path %></li>
+          <li><%= link_to t(".help"), help_path %></li>
+          <li><%= link_to t(".signup"), "#" %></li>
+          <li><%= link_to t(".login"), "#" %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

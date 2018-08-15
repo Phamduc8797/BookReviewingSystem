@@ -1,0 +1,340 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'color';
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.header-text h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* footer */
+
+footer{
+  background-image: url(http://lovedia.vn/wp-content/uploads/2016/05/moon-7.jpg);
+  color: $color_yellow;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  display: block; 
+  small {
+    float: left;
+  }
+}
+
+.header-text{
+  color: $color_yellow;
+  background-image: url(http://lovedia.vn/wp-content/uploads/2016/05/moon-7.jpg);
+}
+
+.jumbotron{
+  position: relative;
+  background-color: initial;
+  #slogan:hover{
+    color: $color_blue;
+  }
+}
+
+nav a{
+  color: $color_nav;
+  text-align: center;
+}
+
+.badge a{
+  color: $color_badge;
+}
+
+/* FORM SIGNUP */
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* sidebar */
+
+aside{
+  section.user_info{
+    margin-top: 20px;
+  }
+  section{
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child{
+      border: 0;
+      padding-top: 0;
+    }
+    span{
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1{
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.gravatar{
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit{
+  margin-top: 15px;
+}
+
+/*form*/
+
+#error_explanation{
+  color: $color_red;
+  ul {
+    color: $color_red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors{
+  @extend .has-error;
+  .form-control{
+    color: $state-danger-text;
+  }
+}
+
+.title_login{
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+  color: $color_a1;
+}
+
+.title_signup{
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+  color: $color_a2;
+}
+
+/* TOP */
+
+#section1{
+  border-bottom: 1px dotted black;
+  #new_update{
+    color: $color_update_title;
+  }
+  #update:hover{
+    border: 1px solid $color_update;
+  }
+  #shared_by{
+    height: 198.1px;
+    #img_update img{
+      width: 120%;
+      height: 120%;
+      object-fit: contain;
+    }
+  }
+}
+
+#section2{
+  border-bottom: 1px dotted black;
+  #new_rating{
+    color: $color_rating_title;
+  }
+  #rating:hover{
+    border: 1px solid $color_rating;
+  }
+  #shared_by{
+    height: 198.1px;
+    #img_update img{
+      width: 120%;
+      height: 120%;
+      object-fit: contain;
+    }
+  }
+}
+
+#section3{
+  border-bottom: 1px dotted black;
+  #new_read{
+    color: $color_read_title;
+  }
+  #read:hover{
+    border: 1px solid $color_read;
+  }
+  #shared_by{
+    height: 198.1px;
+    #img_update img{
+      width: 120%;
+      height: 120%;
+      object-fit: contain;
+    }
+  }
+}
+
+#section4{
+  border-bottom: 1px dotted black;
+  #new_viewed{
+    color: $color_viewed_title;
+  }
+  #viewed:hover{
+    border: 1px solid $color_viewed;
+  }
+  #shared_by{
+    height: 198.1px;
+    #img_update img{
+      width: 120%;
+      height: 120%;
+      object-fit: contain;
+    }
+  }
+}
+
+#section5{
+  border-bottom: 1px dotted black;
+  #new_waiting{
+    color: $color_waiting_title;
+  }
+  #waiting:hover{
+    border: 1px solid $color_waiting;
+  }
+  #shared_by{
+    height: 198.1px;
+    #img_update img{
+      width: 120%;
+      height: 120%;
+      object-fit: contain;
+    }
+  }
+}
+
+#section0{
+  #rank{
+    color: $color_rank;
+  }
+  #name{
+    color: $color_update_title;
+  }
+}
+
+/* Info */
+
+#details{
+  #info{
+    margin-top: 3% 
+  }
+  #button_info{
+    .button-rating,
+    .button-read,
+    .button-viewed,
+    .button-waiting {
+      color: $color_white;
+      border-radius: 4px;
+      text-shadow: 0 1px 1px $color_button_shadow;
+    }
+    .button-rating {
+      background: $color_button_rating; /* this is a green */
+    }
+    .button-read {
+      background: $color_button_read; /* this is a maroon */
+    }
+    .button-waiting {
+      background: $color_button_waiting; /* this is an orange */
+    }
+    .button-viewed {
+      background: $color_button_viewed; /* this is a light blue */
+    }          
+  }
+  #info_image img{
+    width: 60%;
+    height: 70%;
+    object-fit: contain;
+    margin-left: 20%;
+  }
+  .list_book ul li{
+    display: inline-block;
+  }
+  .check-status{
+    display: inline-block;
+    width: 25%;
+  }
+  #description{
+    margin-top: 5%; 
+  }
+}
+
+/* Content */
+
+#content1{
+  margin: 0 auto;
+  background-color: $color_content1;
+  #content2{
+    border-right: 1px dotted $color_black;
+  }
+}
+
+/* Search */
+
+#search{
+  border-bottom: 2px solid $color_red;
+  #search_book{
+    color: $color_search;
+    .search-result{
+      display: block;
+    }
+  }
+}
+
+/* slogan */
+
+#slogan{
+  text-shadow: 2px 2px 2px $color_slogan;
+}
+
+/* menu */
+
+#menu0{
+  font-family: Arial;
+  background-color: $color_title;
+  #menu1{
+    font-size: 30px;
+  }
+  #menu2{
+    font-size: 18px;
+  }
+}

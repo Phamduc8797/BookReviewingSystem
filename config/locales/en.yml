@@ -1,33 +1,119 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  application_helper:
+    book_framgia: "Book FRAMGIA"
+
+  static_pages:
+    home: 
+      title1: "Book FRAMGIA"
+      home: "Home"
+    help:
+      title2: "Help User"
+      help: "Help"
+    about:
+      about: "About"
+      book_app: "| BOOK APP"
+    contact:
+      contact: "Contact"
+      book_app: "| BOOK APP"
+
+  details:
+    info:
+      author: "Author: "
+      andrew: "Andrew Matthews"
+      category: "Category: "
+      tamly: "Tam ly - Ky nang song"
+      name1: "[HAN-OE9-R]Nguyen Thanh Cong"
+      branch: "Branch of book: "
+      office: "HANDICO OFFICE"
+      activities: "Activities"
+      rating: "Rating"
+      read: "Read"
+      waiting: "Waiting"
+      viewed: "Viewed"
+      description: "Description"
+      title: "Happiness Now"
+      status: "Status"
+      shared_by: "Shared by: "
+
+  layouts:
+    menu:
+      title: "BOOK FRAMGIA"
+      home: "Home"
+      help: "Help"
+      login: "Log In"
+      signup: "Sign Up"
+      logout: "Log out"
+      profile: "Profile"
+      setting: "Settings"
+      users: "Users"
+    slogan:
+      slogan: "Welcome to Book FRAMGIA"
+    content:
+    search_book:
+      search_book: "Search Book"
+      more: More
+    Top_follow_book:
+      rank: "Top Follow BOOK"
+      name1: "[HAN-OE9-R]Nguyen Thanh Cong"
+      handico_office: "Handico Office"
+      shared_by: "Shared By"
+    book_update:
+      book_update: "New Update Books"
+      more: More
+      handico_office: "Handico Office"
+      shared_by: "Shared By"
+    book_viewed:
+      book_view: "Top Viewed Books"
+      more: More
+      handico_office: "Handico Office"
+      shared_by: "Shared By"
+    book_read:
+      book_read: "Top Read Books"
+      more: More    
+      handico_office: "Handico Office"
+      shared_by: "Shared By"
+    book_rating:
+      more: More      
+      book_rating: "Top Rating Books"
+      handico_office: "Handico Office"
+      shared_by: "Shared By"
+    book_waiting:
+      more: More      
+      book_waiting: "Top Waiting Books"
+      handico_office: "Handico Office"
+      shared_by: "Shared by :"
+    footer:
+      about: "About"
+      guide: "User Guide"
+      feedback: "Feedback"
+      contact: "Contact Us"
+      address: "13F Keangnam Landmark 72 Tower, Plot E6, Pham Hung Road, Nam Tu Liem, Ha Noi, Viet Nam."
+      email: "education@framgia.com"
+      phone: "84-4-3795-5417"
+      social: "Social"
+
+  shared:
+    _error_messages:
+      form_contain: "The form contains"
+      error: "error"
+      msg: "msg"
+
+  users:
+    new:
+      signup: "Sign Up"
+      create_account: "Create my account"
+      confirmation: "Confirmation"
+
+  controllers:
+    users:
+      welcome: "Welcome to Book Framgia!"
+    sessions:
+      error_login: "Invalid email/password combination"
+      success_login: "Success Login"
+
+  sessions:
+    new:
+      login: "Log In"
+      remember: "Remember"
+      signup: "Sign Up"
+      newuser: "New User?"
