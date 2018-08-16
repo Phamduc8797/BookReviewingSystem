@@ -3,7 +3,7 @@ en:
     book_framgia: "Book FRAMGIA"
 
   static_pages:
-    home: 
+    home:
       title1: "Book FRAMGIA"
       home: "Home"
     help:
@@ -46,6 +46,7 @@ en:
       profile: "Profile"
       setting: "Settings"
       users: "Users"
+      account: "Account"
     slogan:
       slogan: "Welcome to Book FRAMGIA"
     content:
@@ -69,16 +70,16 @@ en:
       shared_by: "Shared By"
     book_read:
       book_read: "Top Read Books"
-      more: More    
+      more: More
       handico_office: "Handico Office"
       shared_by: "Shared By"
     book_rating:
-      more: More      
+      more: More
       book_rating: "Top Rating Books"
       handico_office: "Handico Office"
       shared_by: "Shared By"
     book_waiting:
-      more: More      
+      more: More
       book_waiting: "Top Waiting Books"
       handico_office: "Handico Office"
       shared_by: "Shared by :"
@@ -93,27 +94,86 @@ en:
       social: "Social"
 
   shared:
-    _error_messages:
-      form_contain: "The form contains"
+    error_messages:
+      form_contain: "The form contains "
       error: "error"
-      msg: "msg"
-
   users:
     new:
-      signup: "Sign Up"
+      signup: "Sign up"
       create_account: "Create my account"
       confirmation: "Confirmation"
-
-  controllers:
-    users:
-      welcome: "Welcome to Book Framgia!"
-    sessions:
-      error_login: "Invalid email/password combination"
-      success_login: "Success Login"
-
+      title: "Sign up"
+    form:
+      confirm: "Confirmation"
+    create:
+      welcome: "Welcome to the Sample App!"
+      check_email_link: "Please check your email to activate your account."
+    show:
+      not_found: "The user didn't found"
+    edit:
+      edit_user: "Edit user"
+      save_changes: "Save changes"
+      change: "change"
+      update: "Update your profile"
+      login_request: "Please log in"
+      account_activated: "Account activated!"
+      invalid_activation_link: "Invalid activation link"
+    update:
+      profile: "Profile updated"
+    index:
+      title: "All users"
+      delete: "delete"
+      login_request: "Please log in"
+    destroy:
+      user_deleted: "User deleted"
+      delete_fail: "Delele fail"
+      login_request: "Please login"
+    user:
+      you_sure: "You sure?"
   sessions:
     new:
       login: "Log In"
-      remember: "Remember"
       signup: "Sign Up"
       newuser: "New User?"
+      signup_now: "Sign up now"
+      remember_me: "Remember me on this computer"
+      forgot_password: "(Forgot password)"
+    create:
+      invalid_combination: "Invalid email/password combination"
+      account_not_activated_check_email_link: "Account not activated. Check your email for the activation link."
+      invalid_combination: "Invalid email/password combination"
+  user_mailer:
+    account_activation:
+      sampleapp: "Sample App"
+      welcome_click_link: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+      activate: "Activate"
+      hi: "Hi"
+      account_acctivation: "Account acctivation"
+    password_reset:
+      password_reset: "Password_reset"
+      hi: "Hi"
+      link_expire: "This link will expire in two hours."
+      click_link: "To reset your password click the link below:"
+  account_activations:
+    edit:
+      not_found: "Not found"
+      account_activated: "Account activated!"
+      invalid_activation_link: "Invalid activation link"
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    edit:
+      reset_password: "Reset password"
+      update_password: "Update password"
+      confirmation: "Confirmation"
+    create:
+      email_password_reset: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+      account_not_activated: "Account not activated"
+    update:
+      password_reset: "Password has been reset."
+      can't_empty: "can't be empty"
+      password_reset_expired: "Password reset has expired."
+      account_not_activated: "Account not activated"
