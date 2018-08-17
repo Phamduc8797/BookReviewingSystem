@@ -47,6 +47,7 @@ en:
       setting: "Settings"
       users: "Users"
       account: "Account"
+      manage_user: "Manage Users"
     slogan:
       slogan: "Welcome to Book FRAMGIA"
     content:
@@ -177,3 +178,6 @@ en:
       can't_empty: "can't be empty"
       password_reset_expired: "Password reset has expired."
       account_not_activated: "Account not activated"
+  admin:
+    manage_user:
+      manage_users: "Manage Users"
