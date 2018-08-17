@@ -48,7 +48,7 @@ footer{
   color: $color_yellow;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
-  display: block; 
+  display: block;
   small {
     float: left;
   }
@@ -120,9 +120,20 @@ aside{
   margin-top: 15px;
 }
 
-/*form*/
+/* form */
 
-#error_explanation{
+input, textarea, select, .uneditable-input {
+  border: 1px solid $color-bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
   color: $color_red;
   ul {
     color: $color_red;
@@ -149,6 +160,20 @@ aside{
   text-align: center;
   font-weight: bold;
   color: $color_a2;
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
 
 /* TOP */
@@ -256,7 +281,7 @@ aside{
 
 #details{
   #info{
-    margin-top: 3% 
+    margin-top: 3%
   }
   #button_info{
     .button-rating,
@@ -278,7 +303,7 @@ aside{
     }
     .button-viewed {
       background: $color_button_viewed; /* this is a light blue */
-    }          
+    }
   }
   #info_image img{
     width: 60%;
@@ -294,7 +319,7 @@ aside{
     width: 25%;
   }
   #description{
-    margin-top: 5%; 
+    margin-top: 5%;
   }
 }
 
@@ -336,5 +361,17 @@ aside{
   }
   #menu2{
     font-size: 18px;
+  }
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
   }
 }
