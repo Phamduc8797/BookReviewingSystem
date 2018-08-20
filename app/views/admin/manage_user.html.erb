@@ -1,0 +1,8 @@
+<div class="container">
+  <h2><%= t ".manage_users" %></h2>
+  <ul class="users">
+    <%= paginate @manage_users, theme: "twitter-bootstrap-3" %>
+    <%= render "user"%>
+    <%= paginate @manage_users, theme: "twitter-bootstrap-3" %>
+  </ul>
+</div>
