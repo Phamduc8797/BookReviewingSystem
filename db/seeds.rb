@@ -7,7 +7,7 @@ User.create! name:  "Admin_system",
   activated: true,
   activated_at: Time.zone.now
 
-User.create! name:  "Admin_system1",
+User.create! name: "Admin_system1",
   email: "adminsystem1@gmail.com",
   address: "Handico_OE9_R1",
   password: "111111",
@@ -28,4 +28,14 @@ User.create! name:  "Admin_system1",
     password_confirmation: password,
     activated: true,
     activated_at: Time.zone.now
+end
+
+10.times do
+  name =  FFaker::Book.genre
+  Category.create! name: name
+end
+
+10.times do
+  name = FFaker::Book.unique.author
+  Author.create! name: name
 end

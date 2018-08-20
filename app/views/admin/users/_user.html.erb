@@ -1,15 +1,15 @@
-<% @manage_users.each do |user| %>
+<% @user.each do |user| %>
   <table class="table table-condensed">
     <tbody>
       <tr>
-        <td rowspan="3">
+        <td rowspan="3" class="col-md-4">
           <%= gravatar_for user, size: Settings.gravatar_size %>
         </td>
-        <td><%= link_to user.name, user %></td>
+        <td class="col-md-6"><%= link_to user.name, user %></td>
         <td rowspan="3">
           <% if !user.admin? && !current_user?(user) %>
-          <%= link_to t(".delete"), user, method: :delete, class: "btn btn-danger",
-          data: {confirm: t(".you_sure")} %>
+          <%= link_to t(".delete"), admin_user_path(user), method: :delete,
+            class: "btn btn-danger", data: {confirm: t(".you_sure")} %>
           <% end %>
         </td>
       </tr>

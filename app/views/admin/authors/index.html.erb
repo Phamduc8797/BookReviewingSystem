@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <h2><%= t ".manageauthor" %></h2>
+    <%= paginate @author, theme: "twitter-bootstrap-3" %>
+    <%= render "author" %>
+    <%= paginate @author, theme: "twitter-bootstrap-3" %>
+    <p><%= render "new_author" %></p>
+  </div>
+</div>
