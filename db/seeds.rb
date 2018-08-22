@@ -30,12 +30,27 @@ User.create! name: "Admin_system1",
     activated_at: Time.zone.now
 end
 
-10.times do
+20.times do
   name =  FFaker::Book.genre
   Category.create! name: name
 end
 
-10.times do
+20.times do
   name = FFaker::Book.unique.author
   Author.create! name: name
+end
+
+20.times do |n|
+  title = FFaker::Book.title
+  num_page = "#{n+100}"
+  avg_rate = "0.6"
+  description = FFaker::Book.description sentence_count = 3
+  category_id = rand 1..5
+  author_id = rand 1..12
+  Book.create! title: title,
+    num_page: num_page,
+    avg_rate: avg_rate,
+    description: description,
+    category_id: category_id,
+    author_id: author_id
 end
