@@ -4,12 +4,18 @@ Rails.application.routes.draw do
   get "/help", to: "static_pages#help"
   get "/about", to: "static_pages#about"
   get "/contact", to: "static_pages#contact"
-  get "/manage_user", to: "admin#manage_user"
+  get "/index", to: "admin#index"
   get "/info", to: "details#info"
   get "/signup", to: "users#new"
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
-  resources :users
+  resources :users, except: :destroy
+  namespace :admin do
+    resources :authors
+    resources :admin, only: :index
+    resources :categories
+    resources :users, only: %i(index destroy)
+  end
   resources :account_activations, only: :edit
 end
