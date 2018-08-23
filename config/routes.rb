@@ -23,4 +23,5 @@ Rails.application.routes.draw do
   resources :books do
     resources :reviews
   end
+  resources :comments, only: [:create, :destroy]
 end

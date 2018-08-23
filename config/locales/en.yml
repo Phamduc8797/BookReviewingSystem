@@ -371,6 +371,8 @@ en:
       delete: "Delete"
       edit: "Edit"
       you_sure: "You definitely want to delete!!!"
+    index:
+      all_books: "All Books"
   reviews:
     form:
       please_enter_review: "Please enter your review here..."
@@ -401,3 +403,9 @@ en:
       updated: "Updated"
     show:
       not_found: "Not found"
+      delete_fail: "Delete fail"
+      not_found: "Not found"
+      unauthorized: "Unauthorized"
+  mailers:
+    user_mailer:
+      account_activation: "Account activation"

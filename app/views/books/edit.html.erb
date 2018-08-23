@@ -1,0 +1,13 @@
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="https://í.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png" alt="..." style="width: 80px;">
+    </a>
+  </div>
+  <div class="media-body">
+    <%= form_for @review do |f| %>
+      <%= f.text_area :content, placeholder: "Content", class: "form-control" %>
+      <%= f.button "Review", class: "btn btn-success" %>
+    <% end %>
+  </div>
+</div>

@@ -22,4 +22,6 @@ truncate_content: 200
 length_content_review: 300
 length_rate: 10
 length_title_book: 50
+length_description_book: 500
+length_content_review: 300
 new_update_books: 3
