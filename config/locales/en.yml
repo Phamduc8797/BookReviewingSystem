@@ -329,3 +329,50 @@ en:
         back: "Back to Manager page"
         delete: "Delete"
         you_sure: "You definitely want to delete!!!"
+        add: "ADD"
+      update:
+        book_updated: "Book updated"
+    feedbacks:
+      index:
+        managefeedback: "Manage Feedbacks"
+      feedback:
+        name_user: "Name user"
+        content: "Content"
+      list_feedback:
+        delete: "Delete"
+        view: "View"
+        you_sure: "You definitely want to delete!!!"
+      destroy:
+        feedback_deleted: "Feedbacks deleted"
+      show:
+        view_feedback: "View Feedback"
+        name_user: "Name user: "
+        content: "Content: "
+        back: "Back to Manager page"
+        delete: "Delete"
+        you_sure: "You definitely want to delete!!!"
+    reviews:
+      index:
+        manage_review: "Manage Reviews"
+      review:
+        name_user: "Name user"
+        content: "Content review"
+        num_rate: "Number rate"
+        name_book: "Name book"
+        delete: "Delete"
+        view: "View"
+      list_review:
+        delete: "Delete"
+        view: "View"
+        you_sure: "You definitely want to delete!!!"
+      destroy:
+        review_deleted: "Review deleted"
+      show:
+        view_review: "View Reviews"
+        name_user: "Name user:"
+        num_rate: "Number rate:"
+        name_book: "Name book:"
+        content: "Content review:"
+        delete: "Delete"
+        back: "Back to Manager page"
+

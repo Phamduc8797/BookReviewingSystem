@@ -6,6 +6,7 @@ class Book < ApplicationRecord
     select :id, :picture, :title, :num_page, :avg_rate, :description,
     :author_id, :category_id
   }
+  has_many :reviews, dependent: :destroy
   mount_uploader :picture, PictureUploader
   validates :title, presence: true, length: {maximum: Settings.post}
   validates :num_page, presence: true, length: {maximum: Settings.post}

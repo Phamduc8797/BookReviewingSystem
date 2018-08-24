@@ -56,7 +56,15 @@ end
 end
 
 users = User.order(:created_at).take(6)
-50.times do
+20.times do
   content = FFaker::Lorem.sentence(5)
   users.each {|user| user.feedbacks.create!(content: content)}
+end
+
+books = Book.order(:created_at).take(6)
+20.times do
+  content = FFaker::Lorem.sentence(5)
+  user_id = rand 1..10
+  num_rate = rand 1..5
+  books.each {|book| book.reviews.create!(content: content, num_rate: num_rate, user_id: user_id)}
 end
