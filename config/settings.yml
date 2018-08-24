@@ -18,4 +18,5 @@ gravatar_size: 50
 per_page: 5
 length_description: 500
 truncate_description: 100
+truncate_content: 200
 length_rate: 10

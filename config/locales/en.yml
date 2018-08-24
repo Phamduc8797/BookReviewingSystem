@@ -210,7 +210,7 @@ en:
         enter_name: "Enter new author......"
         add: "ADD"
       edit:
-        edit: "Edit author"
+        edit: "Edit Author"
         edit_name: "Edit name author:"
         save: "Save changes"
       destroy:
@@ -235,7 +235,7 @@ en:
         enter_name: "Enter new category..."
         add: "ADD"
       edit:
-        edit: "Edit category"
+        edit: "Edit Category"
         edit_name: "Edit name category:"
         save: "Save changes"
       update:
@@ -271,6 +271,7 @@ en:
         Description: "Description"
         Author: "Author"
         Category: "Category"
+      list_book:
         delete: "delete"
         edit: "edit"
         you_sure: "You definitely want to delete!!!"
@@ -291,7 +292,7 @@ en:
         book_created: "Book created"
         book_no_created: "Book no create"
       edit:
-        edit: "Edit book"
+        edit: "Edit Book"
         new_book: "Title:"
         enter_name: "Enter here..."
         num_page: "Num pages:"
@@ -305,4 +306,26 @@ en:
       list_book:
         delete: "Delete"
         edit: "Edit"
+        you_sure: "You definitely want to delete!!!"
+        add: "ADD"
+      update:
+        book_updated: "Book updated"
+    feedbacks:
+      index:
+        managefeedback: "Manage Feedbacks"
+      feedback:
+        name_user: "Name user"
+        content: "Content"
+      list_feedback:
+        delete: "Delete"
+        view: "View"
+        you_sure: "You definitely want to delete!!!"
+      destroy:
+        feedback_deleted: "Feedbacks deleted"
+      show:
+        view_feedback: "View Feedback"
+        name_user: "Name user: "
+        content: "Content: "
+        back: "Back to Manager page"
+        delete: "Delete"
         you_sure: "You definitely want to delete!!!"
