@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     resources :admin, only: :index
     resources :categories
     resources :users, only: %i(index destroy)
+    resources :books
   end
   resources :account_activations, only: :edit
 end
